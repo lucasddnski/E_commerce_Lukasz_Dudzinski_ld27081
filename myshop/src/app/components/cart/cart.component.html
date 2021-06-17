@@ -1,5 +1,5 @@
 <app-panel-top></app-panel-top>
-<div class="products">
+<div class="products jede">
     <table style="margin:0 auto;" id="cartTable">
         <thead *ngIf="this.mainService.products">
             <tr>
@@ -27,6 +27,7 @@
     </div>
     <div class="payment">
         <div id="paypal">
+          <img src="https://i.imgur.com/NKyOinb.jpeg" width="150">
         </div>
         <form action="http://www.jakubadamus.cba.pl/paypal.php" method="get" #paymentForm>
             <input type="text" #firstName name="firstName" id="" placeholder="Imie">

@@ -1,7 +1,11 @@
-<app-panel-top></app-panel-top>
-<div id="jede">
+<div class="jede">
   <img src="https://i.imgur.com/qlHr8YW.jpeg">
+
   <h1>Witaj w najlepszym i największym sklepie dla Graczy.</h1>
+  <div class="szukajek" style="display: flex; justify-content: center;">
+    <input class="search" type="text" [(ngModel)]="this.mainService.productsRequest.name">
+    <button class="searchButton" (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
+  </div>
   <br>
     <div id="ein">
       <img src="https://i.imgur.com/2DJUSLU.jpeg" width="450">
